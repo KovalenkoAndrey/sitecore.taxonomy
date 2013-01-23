@@ -1,0 +1,4 @@
+sitecore.taxonomy
+=================
+
+Sitecore Taxonomy
