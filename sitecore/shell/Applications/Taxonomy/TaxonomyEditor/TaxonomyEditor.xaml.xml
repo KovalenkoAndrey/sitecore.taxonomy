@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xamlControls
+  xmlns:x="http://www.sitecore.net/xaml"
+  xmlns:ajax="http://www.sitecore.net/ajax"
+  xmlns:rest="http://www.sitecore.net/rest"
+  xmlns:r="http://www.sitecore.net/renderings"
+  xmlns:xmlcontrol="http://www.sitecore.net/xmlcontrols"
+  xmlns:p="http://schemas.sitecore.net/Visual-Studio-Intellisense"
+  xmlns:asp="http://www.sitecore.net/microsoft/webcontrols"
+  xmlns:html="http://www.sitecore.net/microsoft/htmlcontrols"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+   <Sitecore.Shell.Applications.Taxonomy.TaxonomyEditor x:inherits="Sitecore.Shell.Applications.Taxonomy.TaxonomyEditor.TaxonomyEditorPage,Sitecore.Taxonomies">
+
+      <Sitecore.Controls.DialogPage runat="server" Icon="Applications/32x32/window_add.png" Header="Taxonomy Editor" Text="Select the category. Then specify the weight value for this item.">
+         <AjaxScriptManager runat="server" />
+         <ContinuationManager runat="server" />
+
+         <Script Src="/sitecore/shell/controls/lib/scriptaculous/scriptaculous.js" type="text/javascript" runat="server" />
+         <Script Src="/sitecore/shell/controls/lib/scriptaculous/dragdrop.js" type="text/javascript" runat="server" />
+         
+         <style>
+            .scCondition,
+            .scCondition:link,
+            .scCondition:visited,
+            .scCondition:hover,
+            .scCondition:active {
+            color:blue;
+            text-decoration:underline;
+            white-space:nowrap;
+            }
+
+            .scCondition:active {
+            color:#000000;
+            }
+
+            .scCondition:hover {
+            color:blue;
+            text-decoration:underline;
+            }
+
+            .scConditionNotSet,
+            .scConditionNotSet:link,
+            .scConditionNotSet:visited,
+            .scConditionNotSet:hover,
+            .scConditionNotSet:active {
+            color:red;
+            text-decoration:underline;
+            white-space:nowrap;
+            }
+
+            .scConditionBtn {
+            position:absolute;
+            right:15px;
+            }
+         </style>
+
+         <GridPanel runat="server" Width="100%" Height="100%">
+            <Border runat="server" Margin="0px 0px 4px 0px">
+               <Literal runat="server" Text="Select the categories and weight for the item:" />
+            </Border>
+
+            <Scrollbox class="scScrollbox scFixSize" runat="server" Height="100%" GridPanel.Height="100%" Padding="0px">
+               <Border ID="Categories" Padding="4px" runat="server" />
+            </Scrollbox>
+         </GridPanel>
+
+      </Sitecore.Controls.DialogPage>
+
+   </Sitecore.Shell.Applications.Taxonomy.TaxonomyEditor>
+</xamlControls>

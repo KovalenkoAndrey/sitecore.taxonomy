@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xamlControls
+  xmlns:x="http://www.sitecore.net/xaml"
+  xmlns:ajax="http://www.sitecore.net/ajax"
+  xmlns:rest="http://www.sitecore.net/rest"
+  xmlns:r="http://www.sitecore.net/renderings"
+  xmlns:xmlcontrol="http://www.sitecore.net/xmlcontrols"
+  xmlns:p="http://schemas.sitecore.net/Visual-Studio-Intellisense"
+  xmlns:asp="http://www.sitecore.net/microsoft/webcontrols"
+  xmlns:html="http://www.sitecore.net/microsoft/htmlcontrols"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+   <Sitecore.Shell.Applications.Taxonomy.Dialogs.SetTags x:inherits="Sitecore.Shell.Applications.Taxonomy.Dialogs.SetTagsForm, Sitecore.Taxonomies">
+
+      <Sitecore.Controls.DialogPage runat="server" Icon="Applications/32x32/window_add.png" Header="Tags Editor" Text="Select the tags.">
+         <AjaxScriptManager runat="server" />
+         <ContinuationManager runat="server" />
+
+         <Script Src="/sitecore/shell/Controls/Lib/jQuery/jquery.noconflict.js" type="text/javascript" runat="server" />
+         <Script Src="/sitecore/shell/Applications/Taxonomy/Dialogs/SetTags/SetTags.js" type="text/javascript" runat="server" />         
+         
+         <style>
+            .tagsBox
+            {
+            height:40px;            
+            border-style:inset;
+            border-width:1px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            background-color:white;
+            }
+
+            .tagSet
+            {
+            text-decoration:underline;
+            color:blue;
+            }
+
+            .tagId
+            {
+            display:none;
+            }
+
+            .tagNotSet
+            {
+            text-decoration:none;
+            color:black;
+            }
+
+            .tagNotFound
+            {
+            text-decoration:none;
+            color:red;
+            }
+
+            .tagsTips
+            {
+            position:absolute;
+            left: 10px;
+            background-color: lightGrey;
+            display: none;
+            }
+
+            .tagsTip
+            {
+            }
+
+            .selected
+            {
+            background-color : red;
+            }
+         </style>
+
+         <GridPanel runat="server" Width="100%" Height="100%" Columns="2">
+            <Border runat="server" GridPanel.Column="0" Width="75px" style="padding:5px;">
+               <Button runat="server" ID="ShowTagsBtn" Header="Tags..." Width="100%" Click="ShowTags" /><br/>
+               <Button runat="server" ID="CheckTagsBtn" Header="Check Tags" Width="100%" Click="CheckTags" />
+            </Border>
+            <Border runat="server" GridPanel.Column="1" GridPanel.Width="100%" style="padding:5px;position:relative;">
+               <input type="hidden" ID="categories" class="categories" runat="server"/>
+               <input type="hidden" ID="result" class="result" runat="server" />
+               <div onclick="this.contentEditable='true';" class="tagsBox" runat="server" ID="tagsBox" onkeypress="KeyPressed(event)" onkeyup="KeyUp(event)" onkeydown="KeyDown(event)"></div>
+               <div class="tagsTips"></div>
+            </Border>
+         </GridPanel>
+
+      </Sitecore.Controls.DialogPage>
+   </Sitecore.Shell.Applications.Taxonomy.Dialogs.SetTags>
+</xamlControls>

@@ -1,0 +1,51 @@
+﻿.tagsBox{
+
+ }
+.tagSet{
+    color:blue;
+    text-decoration:underline;
+    cursor:default;
+}
+.selectTag{
+    background-color:Blue;
+    color:White;
+}
+.tagsTips{
+    display: none;
+    height: 75px;
+    overflow: scroll;
+    width: auto;
+    position:relative;
+    background-color:#ffffff;
+}
+
+.tagsTips a:link,
+.tagsTips a:visited,
+.tagsTips a:hover,
+.tagsTips a:active {
+    color:black;
+}
+.tagsTips .conflict
+{
+    background-color:#F73;    
+}
+.tagsTip {
+}
+.scContentButton.selected {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("/sitecore/shell/Themes/Standard/Images/Ribbon/SmallButtonActive.png") repeat-x scroll 0 0 #FFE594;
+    border-color: #DDCF9B #D2C08E #CCC2A3;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    padding: 1px 5px;
+}
+.tagNotFound
+{
+   text-decoration: none;
+   color: red;
+}

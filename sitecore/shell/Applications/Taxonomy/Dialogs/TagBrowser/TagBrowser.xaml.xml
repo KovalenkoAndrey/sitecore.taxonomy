@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xamlControls
+  xmlns:x="http://www.sitecore.net/xaml"
+  xmlns:ajax="http://www.sitecore.net/ajax"
+  xmlns:rest="http://www.sitecore.net/rest"
+  xmlns:r="http://www.sitecore.net/renderings"
+  xmlns:xmlcontrol="http://www.sitecore.net/xmlcontrols"
+  xmlns:p="http://schemas.sitecore.net/Visual-Studio-Intellisense"
+  xmlns:asp="http://www.sitecore.net/microsoft/webcontrols"
+  xmlns:html="http://www.sitecore.net/microsoft/htmlcontrols"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+   <Sitecore.Shell.Applications.Taxonomy.Dialogs.TagBrowser x:inherits="Sitecore.Shell.Applications.Taxonomy.Dialogs.TagBrowserForm, Sitecore.Taxonomies">
+
+      <Sitecore.Controls.DialogPage runat="server" Icon="Applications/32x32/window_add.png" Header="Category browser." Text="Select or create category.">
+         <x:register assembly="ComponentArt.Web.UI" namespace="ComponentArt.Web.UI"/>
+
+         <AjaxScriptManager runat="server" />
+         <ContinuationManager runat="server" />
+
+         <Stylesheet runat="server" Src="Treeview.css" DeviceDependant="true"/>
+
+         <Script runat="server" type="text/javascript" language="javascript"  x:placeholder="Scripts" Src="/sitecore/shell/Controls/Lib/jQuery/jquery.noconflict.js" />
+         <Script Src="/sitecore/shell/Applications/Taxonomy/Dialogs/TagBrowser/TagBrowser.js" type="text/javascript" runat="server" />
+        <meta runat="server" x:placeholder="Scripts" name="google" value="notranslate"/>
+         <style>
+           .scBigButton
+           {
+           height:75px;
+           width:75px;
+           }
+           .scEditPanel
+           {
+           padding:0px 10px;
+           }
+           .scMessageBorder
+           {
+           }
+           #treeviewBox{
+            height:320px;
+            overflow: auto;
+           }
+         </style>
+
+         <GridPanel runat="server" Width="100%" Height="100%" Columns="1">
+            <Border runat="server" Class="scMessageBorder">
+               <Literal runat="server" ID="messageLiteral" Text="Please select the category to use."/>
+            </Border>
+            <Scrollbox runat="server" GridPanel.Height="100%" ID="treeviewBox">
+               <input id="categoryTreeview_Selected" name="categoryTreeview_Selected" type="hidden"/>
+               <TreeView ID="categoryTreeview" runat="server" CssClass="TreeView" NodeCssClass="TreeNode"
+                  SelectedNodeCssClass="SelectedTreeNode" HoverNodeCssClass="HoverTreeNode" NodeEditCssClass="NodeEdit"
+                  LineImageWidth="19" LineImageHeight="20" DefaultImageWidth="16" DefaultImageHeight="16"
+                  ItemSpacing="0" NodeLabelPadding="3" ExpandImageUrl="/sitecore/shell/themes/standard/componentart/treeview/col.gif"
+                  ExpandSlide="none" CollapseImageUrl="/sitecore/shell/themes/standard/componentart/treeview/exp.gif"
+                  CollapseSlide="none" EnableViewState="false" AutoPostBackOnSelect="false" Height="99%"/>
+            </Scrollbox>
+            <Splitter runat="server"/>
+            <Scrollbox runat="server" GridPanel.Height="150px">
+               <GridPanel runat="server" Columns="2" GridPanel.Width="100%" Width="100%">
+                  <GridPanel runat="server" Columns="2" GridPanel.Width="100%" Width="100%" Class="scEditPanel" CellPadding="3px">
+                     <Literal runat="server" Text="Parent:"/>
+                     <Literal runat="server" ID="newTagParentLiteral" Text="" Width="100%"/>
+                     <Literal runat="server" Text="Category name"/>
+                     <MaskedInput ID="categoryNameEdit" runat="server" Width="100%" FilterCharactersOnKeyDown="false"/>
+                     <Literal runat="server" Text="Category weight"/>
+                     <NumberInput ID="categoryWeightEdit" runat="server" Width="100%" Value="1" MinValue="0" MaxValue="1"/>
+                     <Literal runat="server" Text="Related to parent"/>
+                     <NumberInput ID="categoryRelatedToParentEdit" runat="server" Width="100%" Value="1" MinValue="0" MaxValue="1"/>
+                     <Literal runat="server" Text="Related to children"/>
+                     <NumberInput ID="categoryRelatedToChildEdit" runat="server" Width="100%" Value="1" MinValue="0" MaxValue="1"/>
+                  </GridPanel>
+                  <Button runat="server" ID="createTagBtn" Header="Create tag" Class="scBigButton" Click="createTag_Click" Disabled="true" />
+               </GridPanel>
+            </Scrollbox>
+         </GridPanel>
+
+      </Sitecore.Controls.DialogPage>
+   </Sitecore.Shell.Applications.Taxonomy.Dialogs.TagBrowser>
+</xamlControls>

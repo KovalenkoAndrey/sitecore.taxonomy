@@ -1,0 +1,390 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Taxonomy module</PackageName>
+      <Author>Sitecore A/S</Author>
+      <Version />
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher>Sitecore A/S</Publisher>
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/system/Field types/Analytics/Classification/{F9D12DA9-0BBB-48F8-9A39-D120F623FA58}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Analytics/Classification/Menu/{69205F25-5828-4C8C-BA74-CFD5746FBD92}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Analytics/Classification/Menu/Check Tags/{D54D4556-6356-47C0-A25C-EB28D70C1B8A}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Analytics/Classification/Menu/Related Categories/{F7DB2888-A456-4E2C-A185-8F190D939F74}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Analytics/Classification/Menu/Select Tags/{73F547D6-9EFB-422D-8949-A6F460760D0A}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Analytics/Classification/WebEdit Buttons/{AE265BBB-1A3F-4DFA-B06C-A336ADBC89FC}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Analytics/Classification/WebEdit Buttons/Check Tags/{811D05E6-C931-48C8-BF8F-674F39D4B2A5}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Analytics/Classification/WebEdit Buttons/Select Tags/{323F6F0C-AFF0-413C-B64F-248F771B148E}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Field type</Name>
+    </xitems>
+    <items>
+      <Database>master</Database>
+      <Root>{FF4E71C4-34D9-4432-BB93-A593D81F4260}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Default classification root</Name>
+    </items>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/layout/Sublayouts/CategoryList/{08FE4FED-79E0-4EA3-827B-0413B73F0655}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/DocumentList/{E898594E-D078-4034-9319-209B66D0521E}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/Menu/{74068919-D5A7-48A2-9769-0BE49C5771EF}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/RelatedDocumentsList/{DF0F607B-C6EA-4E55-8882-FD9D8B612B68}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/TwoColumns/{011FFDC0-404F-4FF7-A8EE-A7E1ADFE0B89}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Sublayout items</Name>
+    </xitems>
+    <items>
+      <Database>master</Database>
+      <Root>{8434D3AC-1771-489A-80E7-9A46F09AE424}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Branches</Name>
+    </items>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/templates/System/Taxonomies/{8DB74D73-8D7A-4D80-91FF-B552F6C3E766}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Category/__Standard Values/{85877389-6FD3-4E5E-A69A-096E3778437B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Category/{FCE30413-F1D8-43F4-8B93-B51FDED4D251}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Category/Parameters/{23C1D5FC-79ED-4A37-8306-D92EDC3D446A}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Category/Parameters/ConflictTags/{498EA1C6-5FD4-4E75-9965-17EE0BE0C3E5}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Category/Parameters/RelatedToParent/{2024F39E-68CA-4071-95BA-A57DA4C4FB57}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Category/Parameters/RelatedWithChildren/{B7E33328-D77F-4050-80F9-672BD7D0C834}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Category/Parameters/Weight/{4E7C19E6-94D9-45C3-80A3-7BA8EA200BC9}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Group/__Standard Values/{4FA6D225-4E58-4D3B-99E9-51939D9A8A43}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Group/{A69C0097-5CE1-435B-99E9-FA2B998D1C70}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Taxonomy/{B89100D1-CA99-43DC-A6B3-1AD284AAA014}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Taxonomy/Taxonomy/{790B2906-A64F-4198-A14B-59AF37ED17E2}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Taxonomy/Taxonomy/Tags/{0F347169-F131-4276-A69D-187C0CAC3740}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Weight/{A8B3D8E9-12FC-4097-B101-088672FB0AE6}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Weight/Parameters/{3639443B-C8D5-4ECF-9CB3-5D2066350DB4}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Taxonomies/Weight/Parameters/Weight/{CDDA146F-6EBB-44AA-9028-D95E81C80FA9}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Taxonomy templates</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/templates/System/Templates/Template/Data/__Recommended Taxonomies/{D55AD3F8-BA66-4D53-AE27-290482181158}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Reccomended Taxonomies field</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Sitecore.Taxonomy.config</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Configuration files</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/layouts/CategoryList.ascx</x-item>
+        <x-item>/layouts/DocumentList.ascx</x-item>
+        <x-item>/layouts/Menu.ascx</x-item>
+        <x-item>/layouts/RelatedDocumentsList.ascx</x-item>
+        <x-item>/layouts/TwoColumns.ascx</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Sublayout files</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/sitecore/shell/Applications/Taxonomy/Controls/Classification.css</x-item>
+        <x-item>/sitecore/shell/Applications/Taxonomy/Controls/Classification.js</x-item>
+        <x-item>/sitecore/shell/Applications/Taxonomy/Controls/Classification.xaml.xml</x-item>
+        <x-item>/sitecore/shell/Applications/Taxonomy/Controls/PageEditor/ClassificationEditor.js</x-item>
+        <x-item>/sitecore/shell/Applications/Taxonomy/Controls/PageEditor/ClassificationEtitor.css</x-item>
+        <x-item>/sitecore/shell/Applications/Taxonomy/Controls/PageEditor/TaxomomiesRendering.ascx</x-item>
+        <x-item>/sitecore/shell/Applications/Taxonomy/Dialogs/RelatedScreen/RelatedScreen.xaml.xml</x-item>
+        <x-item>/sitecore/shell/Applications/Taxonomy/Dialogs/SetTags/SetTags.js</x-item>
+        <x-item>/sitecore/shell/Applications/Taxonomy/Dialogs/SetTags/SetTags.xaml.xml</x-item>
+        <x-item>/sitecore/shell/Applications/Taxonomy/Dialogs/TagBrowser/TagBrowser.js</x-item>
+        <x-item>/sitecore/shell/Applications/Taxonomy/Dialogs/TagBrowser/TagBrowser.xaml.xml</x-item>
+        <x-item>/sitecore/shell/Applications/Taxonomy/TaxonomyEditor/TaxonomyEditor.xaml.xml</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>UI control files</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/Sitecore.Taxonomies.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Assembly files</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/content/Applications/WebEdit/WebEdit Texts/Classification Texts/{0A128768-2C40-4ED4-AC67-BDD49329342E}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Classification field test for page editor</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
