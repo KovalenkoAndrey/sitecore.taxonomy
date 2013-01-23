@@ -1,4 +1,4 @@
 sitecore.taxonomy
 =================
 
-Sitecore Taxonomy
+Sitecore Taxonomy module.
